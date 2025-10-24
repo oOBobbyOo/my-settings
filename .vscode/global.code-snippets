@@ -1,0 +1,38 @@
+{
+  "Print to console log": {
+    "scope": "javascript,typescript",
+    "prefix": "clg",
+    "body": ["console.log('[ $0 ] >>:', $0)"],
+    "description": "Log output to console",
+  },
+   "Clipboard to console log": {
+    "scope": "javascript,typescript",
+    "prefix": "clog",
+    "body": ["console.log('[ $CLIPBOARD ] >>:', $CLIPBOARD) $0"],
+    "description": "Clipboard Log output to console",
+  },
+  "Print JSON to console": {
+    "scope": "javascript,typescript",
+		"prefix": "jlog",
+		"body": [
+			"console.log('$CLIPBOARD', JSON.stringify($CLIPBOARD, null, 2))"
+		],
+		"description": "Log JSON output to console"
+	},
+  "Vue3 setup snippets": {
+    "scope": "vue",
+    "prefix": "v3",
+    "body": [
+      "<script setup lang='ts'>",
+      "$3",
+      "</script>\n",
+      "<template>",
+      "\t$1",
+      "</template>\n",
+      "<style scoped>",
+      "$2",
+      "</style>\n",
+    ],
+    "description": "Vue3 setup script"
+  }
+}

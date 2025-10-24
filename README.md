@@ -3,6 +3,6 @@
 [`.vscode/settings.json`](./.vscode/settings.json)</br>
 [`.vscode/extensions.json`](./.vscode/extensions.json)</br>
 
-`shell
+```shell
 code --list-extensions > extensions.txt
-`
+```
