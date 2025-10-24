@@ -1,0 +1,39 @@
+{
+  "recommendations": [
+    // antfu
+   "antfu.browse-lite",
+   "antfu.iconify",
+   "antfu.pnpm-catalog-lens",
+   "antfu.unocss",
+   "antfu.vite",
+   "antfu.where-am-i",
+ 
+   // themes & icons
+   "antfu.icons-carbon",
+   "antfu.theme-vitesse",
+   "sainnhe.gruvbox-material",
+   "catppuccin.catppuccin-vsc-icons",
+ 
+   // tools
+   "alefragnani.project-manager",
+   "davidanson.vscode-markdownlint",
+   "dbaeumer.vscode-eslint",
+   "editorconfig.editorconfig",
+   "lokalise.i18n-ally",
+   "pflannery.vscode-versionlens",
+   "usernamehw.errorlens",
+ 
+   // git
+   "eamodio.gitlens",
+ 
+   // github
+   "github.vscode-github-actions",
+   "github.vscode-pull-request-github",
+ 
+   // react
+   "dsznajder.es7-react-js-snippets",
+ 
+   // vue
+   "vue.volar"
+  ]
+}
