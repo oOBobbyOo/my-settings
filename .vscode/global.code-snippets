@@ -1,17 +1,17 @@
 {
-  "Print to console log": {
+  "print to console log": {
     "scope": "javascript,typescript",
     "prefix": "clg",
     "body": ["console.log('[ $0 ] >>:', $0)"],
     "description": "Log output to console",
   },
-   "Clipboard to console log": {
+   "clipboard to console log": {
     "scope": "javascript,typescript",
     "prefix": "clog",
     "body": ["console.log('[ $CLIPBOARD ] >>:', $CLIPBOARD) $0"],
-    "description": "Clipboard Log output to console",
+    "description": "Clipboard log output to console",
   },
-  "Print JSON to console": {
+  "print JSON to console": {
     "scope": "javascript,typescript",
 		"prefix": "jlog",
 		"body": [
@@ -19,7 +19,31 @@
 		],
 		"description": "Log JSON output to console"
 	},
-  "Vue3 setup snippets": {
+  "import": {
+    "scope": "javascript,typescript",
+    "prefix": "im",
+    "body": [
+      "import { $1 } from '$2'"
+    ],
+    "description": "Import a module"
+  },
+  "export": {
+    "scope": "javascript,typescript",
+    "prefix": "ex",
+    "body": [
+      "export { $1 } from '$2'"
+    ],
+    "description": "Export a module"
+  },
+  "export all": {
+    "scope": "javascript,typescript",
+    "prefix": "exa",
+    "body": [
+      "export * from '$2'"
+    ],
+    "description": "Export all module"
+  },
+  "vue3 setup snippets": {
     "scope": "vue",
     "prefix": "v3",
     "body": [
@@ -37,7 +61,7 @@
     ],
     "description": "Vue3 setup snippets"
   },
-   "Vue3 setup template": {
+   "vue3 setup template": {
     "scope": "vue",
     "prefix": "vs",
     "body": [
