@@ -24,15 +24,36 @@
     "prefix": "v3",
     "body": [
       "<script setup lang='ts'>",
+      "$2",
+      "</script>\n",
+      "<template>",
+      "\t<div>",
+      "\t\t$1",
+      "\t</div>",
+      "</template>\n",
+      "<style scoped>",
+      "$3",
+      "</style>\n",
+    ],
+    "description": "Vue3 setup snippets"
+  },
+   "Vue3 setup template": {
+    "scope": "vue",
+    "prefix": "vs",
+    "body": [
+      "<script setup lang='ts'>",
+      "defineOptions({ name: '$1' })\n",
       "$3",
       "</script>\n",
       "<template>",
-      "\t$1",
+      "\t<div>",
+      "\t\t$2",
+      "\t</div>",
       "</template>\n",
       "<style scoped>",
-      "$2",
+      "$4",
       "</style>\n",
     ],
-    "description": "Vue3 setup script"
+    "description": "Vue3 setup template"
   }
 }
