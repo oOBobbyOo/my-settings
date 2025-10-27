@@ -10,4 +10,4 @@ code --list-extensions > extensions.txt
 
 ## LICENSE
 
-MIT
+[`MIT`](./LICENSE)
