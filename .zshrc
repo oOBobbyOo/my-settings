@@ -1,6 +1,9 @@
 
 # See https://ohmyz.sh/
 
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
 # --------------------------------------------------------------------------- #
 # Themes
 # --------------------------------------------------------------------------- #
@@ -51,8 +54,8 @@ alias gss='git status -s'              # 查看仓库状态（简洁版）
 # 添加和提交相关 (Add & Commit)
 # ============================================================================
 alias ga='git add'                     # 添加文件到暂存区
-alias gA='git add -A'
-alias gaa='git add .'                  # 添加所有文件到暂存区
+alias gA='git add -A'                  # 添加所有文件到暂存区（整个仓库）
+alias gaa='git add .'                  # 添加所有文件到暂存区（当前目录及其子目录） 
 alias gau='git add -u'                 # 添加已跟踪的修改文件
 alias gap='git add -p'                 # 交互式添加文件片段
 
@@ -80,6 +83,7 @@ alias gbmm='git branch --merged'       # 查看已合并的分支
 alias gco='git checkout'               # 切换分支或恢复文件
 alias gcb='git checkout -b'            # 创建并切换到新分支
 alias gcom='git checkout master'       # 切换到 master 分支
+alias gcos='git checkout master'       # 切换到 master 分支
 alias gcod='git checkout develop'      # 切换到 develop 分支
 alias gco-='git checkout -'            # 切换到上一个分支
 
@@ -102,7 +106,7 @@ alias gfo='git fetch origin'           # 获取 origin 远程更新
 alias gp='git push'                    # 推送到远程
 alias gpu='git push -u origin'         # 推送并设置上游分支
 alias gpf='git push --force'           # 强制推送
-alias gpff='git push --force-with-lease' # 安全强制推送
+alias gpfl='git push --force-with-lease' # 安全强制推送
 alias gpd='git push --delete origin'   # 删除远程分支
 
 alias gpl='git pull'                   # 拉取并合并
@@ -151,7 +155,7 @@ alias grbc='git rebase --continue'     # 继续变基
 alias grba='git rebase --abort'        # 终止变基
 alias grbs='git rebase --skip'         # 跳过当前变基提交
 
- ============================================================================
+# ============================================================================
 # 贮藏操作 (Stash Operations)
 # ============================================================================
 alias gst='git stash'                  # 贮藏当前更改
@@ -183,6 +187,7 @@ alias gt='git tag'                     # 查看标签
 alias gta='git tag -a'                 # 创建注释标签
 alias gtd='git tag -d'                 # 删除本地标签
 alias gtdr='git push origin --delete'  # 删除远程标签
+alias gtl='git tag -l'                 # 列出标签
 
 # ============================================================================
 # 查找和搜索 (Find & Search)
@@ -190,6 +195,7 @@ alias gtdr='git push origin --delete'  # 删除远程标签
 alias gfind='git ls-files | grep'      # 在跟踪文件中查找
 alias ggrep='git grep -n'              # 在仓库中搜索内容
 alias gwho='git shortlog -sn'          # 查看贡献者统计
+alias gblame='git blame'               # 查看文件修改历史
 
 # ============================================================================
 # 配置和信息 (Config & Info)
@@ -197,6 +203,7 @@ alias gwho='git shortlog -sn'          # 查看贡献者统计
 alias gcf='git config --list'          # 查看配置
 alias gcfg='git config --global'       # 全局配置
 alias gcfl='git config --local'        # 本地配置
+alias ginfo='git remote show origin'   # 查看仓库信息
 
 # ============================================================================
 # 高级操作别名 (Advanced Operations)
@@ -211,3 +218,88 @@ alias gignored='git ls-files -v | grep "^[[:lower:]]"' # 查看被忽略的文�
 
 alias gcount='git rev-list --count HEAD' # 统计提交数量
 alias gsize='git count-objects -vH'     # 查看仓库大小
+
+# ============================================================================
+# 自定义函数 (Custom Functions)
+# ============================================================================
+
+# 快速提交：添加所有文件并提交
+function gacm() {
+  if [ -z "$1" ]; then
+    echo "❌ 请提供提交消息"
+    echo "用法: gacm \"your commit message\""
+    return 1
+  fi
+  git add -A && git commit -m "$1"
+  echo "✅ 提交完成！"
+}
+
+# 推送到当前分支的远程
+function gpush() {
+  local branch=$(git branch --show-current)
+  if [ -z "$branch" ]; then
+    echo "❌ 当前不在 git 仓库中"
+    return 1
+  fi
+  echo "📤 推送到远程分支: $branch"
+  git push origin "$branch"
+  echo "✅ 推送完成！"
+}
+
+# 从当前分支的远程拉取
+function gpull() {
+  local branch=$(git branch --show-current)
+  if [ -z "$branch" ]; then
+    echo "❌ 当前不在 git 仓库中"
+    return 1
+  fi
+  echo "📥 从远程分支拉取: $branch"
+  git pull origin "$branch"
+  echo "✅ 拉取完成！"
+}
+
+# 创建新分支并切换
+function gnew() {
+  if [ -z "$1" ]; then
+      echo "❌ 请提供分支名称"
+      echo "用法: gnew <branch-name>"
+    return 1
+  fi
+  echo "🌿 创建并切换到新分支: $1"
+  git checkout -b "$1"
+}
+
+# 删除本地和远程分支
+function gdelete() {
+  if [ -z "$1" ]; then
+    echo "❌ 请提供分支名称"
+    echo "用法: gdelete <branch-name>"
+    return 1
+  fi
+  git branch -d "$1" && git push origin --delete "$1"
+}
+
+# 查看文件的提交历史
+function ghistory() {
+  if [ -z "$1" ]; then
+    echo "❌ 请提供文件名"
+    echo "用法: ghistory <file-path>"
+    return 1
+  fi
+  git log --follow -p -- "$1"
+}
+
+# 快速创建并推送标签
+function gtag() {
+  if [ -z "$1" ]; then
+    echo "❌ 请提供标签名称"
+    echo "用法: gtag <tag-name> [message]"
+    return 1
+  fi
+  git tag -a "$1" -m "Tag $1" && git push origin "$1"
+}
+
+# 同步 fork 的仓库
+function gsync() {
+  git fetch upstream && git checkout master && git merge upstream/master && git push origin master
+}
