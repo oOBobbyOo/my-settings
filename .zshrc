@@ -39,9 +39,28 @@ source $ZSH/oh-my-zsh.sh
 # alias python="/usr/bin/python3"
 alias python="/opt/homebrew/bin/python3"
 
-# clear terminal
-alias cl='clear'
+# 清屏
+alias cl='clear'                               # 清屏
+alias cls='clear'                              # 清屏 (Windows风格)
 
+# 快速编辑
+alias zshrc='code ~/.zshrc'                    # 编辑zsh配置
+alias bashrc='code ~/.bashrc'                  # 编辑bash配置
+alias vimrc='code ~/.vimrc'                    # 编辑vim配置
+alias hosts='sudo code /etc/hosts'             # 编辑hosts文件
+
+# 配置重载
+alias rezsh='source ~/.zshrc'                  # 重载zsh配置
+alias rebash='source ~/.bashrc'                # 重载bash配置
+
+# 时间和日期 (Time & Date)
+alias now='date +"%T"'                         # 当前时间
+alias date='date +"%d-%m-%Y"'                  # 当前日期
+alias nowfull='date +"%Y-%m-%d %T"'            # 完整日期时间
+alias week='date +%V'                          # 当前周数
+alias cal='cal -3'                             # 显示三个月日历
+
+# Git
 # ============================================================================
 # 基础操作 (Basic Operations)
 # ============================================================================
@@ -65,6 +84,10 @@ alias gca='git commit -a'              # 提交所有已跟踪文件的更改
 alias gcam='git commit -a -m'          # 提交所有更改并添加消息
 alias gcaa='git commit -a --amend'     # 修改上次提交
 alias gcn='git commit --no-verify'     # 跳过钩子提交
+
+# 快速提交组合
+alias gac='git add -A && git commit -m' # 添加所有文件并提交
+alias gacp='git add -A && git commit -m "$1" && git push'  # 添加、提交、推送
 
 # ============================================================================
 # 分支操作 (Branch Operations)
