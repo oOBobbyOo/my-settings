@@ -47,6 +47,7 @@ alias cls='clear'                              # 清屏 (Windows风格)
 alias zshrc='code ~/.zshrc'                    # 编辑zsh配置
 alias bashrc='code ~/.bashrc'                  # 编辑bash配置
 alias vimrc='code ~/.vimrc'                    # 编辑vim配置
+alias gitconfig='code ~/.gitconfig'            # 编辑gitconfig
 alias hosts='sudo code /etc/hosts'             # 编辑hosts文件
 
 # 配置重载
