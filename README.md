@@ -1,10 +1,13 @@
 # My Settings
 
+## vscode
+
 [`.vscode/settings.json`](./.vscode/settings.json)</br>
 [`.vscode/extensions.json`](./.vscode/extensions.json)</br>
 [`.vscode/global.code-snippets`](./.vscode/global.code-snippets)</br>
 
 ```shell
+# 导出全部拓展
 code --list-extensions > extensions.txt
 ```
 
@@ -30,7 +33,12 @@ source ~/.zshrc
 
 ```shell
 # https://github.com/ohmyzsh/ohmyzsh
+
+# curl
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# wget
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # 查看内置主题
 ls ~/.oh-my-zsh/themes/
