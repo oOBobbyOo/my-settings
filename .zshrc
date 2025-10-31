@@ -1,5 +1,5 @@
 
-# See https://ohmyz.sh/
+# @See https://ohmyz.sh/
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # --------------------------------------------------------------------------- #
 # Themes
 # --------------------------------------------------------------------------- #
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# @See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 # git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 # ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
@@ -18,7 +18,7 @@ ZSH_THEME="spaceship"
 # --------------------------------------------------------------------------- #
 # @See https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 
-# See https://github.com/zsh-users
+# @See https://github.com/zsh-users
 
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -59,6 +59,27 @@ alias date='date +"%d-%m-%Y"'                  # 当前日期
 alias nowfull='date +"%Y-%m-%d %T"'            # 完整日期时间
 alias week='date +%V'                          # 当前周数
 alias cal='cal -3'                             # 显示三个月日历
+
+# ============================================================================
+# Node Package Manager
+# ============================================================================
+# @See https://github.com/antfu/ni
+
+alias nio="ni --prefer-offline"
+alias s="nr start"
+alias d="nr dev"
+alias b="nr build"
+alias bw="nr build --watch"
+alias t="nr test"
+alias tu="nr test -u"
+alias tw="nr test --watch"
+alias w="nr watch"
+alias p="nr play"
+alias c="nr typecheck"
+alias lint="nr lint"
+alias lintf="nr lint --fix"
+alias release="nr release"
+alias re="nr release"
 
 # Git
 # ============================================================================
