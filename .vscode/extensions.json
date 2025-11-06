@@ -19,6 +19,7 @@
    "davidanson.vscode-markdownlint",
    "dbaeumer.vscode-eslint",
    "editorconfig.editorconfig",
+   "johnsoncodehk.vscode-tsconfig-helper",
    "lokalise.i18n-ally",
    "mpontus.tab-cycle",
    "pflannery.vscode-versionlens",
