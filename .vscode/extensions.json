@@ -16,18 +16,25 @@
  
    // tools
    "alefragnani.project-manager",
+   "bradlc.vscode-tailwindcss",
    "davidanson.vscode-markdownlint",
    "dbaeumer.vscode-eslint",
    "editorconfig.editorconfig",
+   "esbenp.prettier-vscode",
    "johnsoncodehk.vscode-tsconfig-helper",
    "lokalise.i18n-ally",
    "mpontus.tab-cycle",
    "pflannery.vscode-versionlens",
+   "styled-components.vscode-styled-components",
    "ultram4rine.vscode-choosealicense",
    "usernamehw.errorlens",
  
    // git
    "eamodio.gitlens",
+
+  // Ai
+  "github.copilot",
+  "github.copilot-chat",
  
    // github
    "github.vscode-github-actions",
