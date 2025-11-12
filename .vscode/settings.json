@@ -22,6 +22,7 @@
   // ========== Editor ========== 
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.wordWrap": "on",
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "editor.find.addExtraSpaceOnTop": false,
   "editor.inlineSuggest.enabled": true,
@@ -204,6 +205,14 @@
   "prettier.printWidth": 200,
   "prettier.semi": false,
   "prettier.singleQuote": true,
+
+  // markdownlint
+  "markdownlint.config": {
+    "MD033": false
+  },
+
+  // vite
+  "vite.autoStart": false,
 
   // ========== File Nesting ==========
   // this might not be up to date with the repo, please check yourself
