@@ -1,6 +1,6 @@
 # My Settings
 
-## vscode
+## VScode
 
 [`.vscode/settings.json`](./.vscode/settings.json)</br>
 [`.vscode/extensions.json`](./.vscode/extensions.json)</br>
@@ -11,7 +11,7 @@
 code --list-extensions > extensions.txt
 ```
 
-## zsh
+## Zsh
 
 [`.zshrc`](./.zshrc)
 
@@ -29,7 +29,7 @@ code ~/.zshrc
 source ~/.zshrc
 ```
 
-## on-my-zsh
+## On-My-Zsh
 
 ```shell
 # https://github.com/ohmyzsh/ohmyzsh
@@ -46,15 +46,15 @@ ls ~/.oh-my-zsh/themes/
 
 ## Mac
 
-- [Homebrew](`https://brew.sh/`)
-- [iTerm2](`https://iterm2.com/`)
-- [Alfred](`https://www.alfredapp.com/`)
-- [KeyCastr](`https://github.com/keycastr/keycastr`)
-- [IRightMouse](`https://www.irightmouse.com/`)
-- [SwitchHosts](`https://switchhosts.vercel.app/zh`)
-- [Apifox](`https://apifox.com/`)
-- [Notion](`https://www.notion.com/`)
-- [Charles](`https://www.charlesproxy.com/`)
+- [Homebrew](https://brew.sh/)
+- [iTerm2](https://iterm2.com/)
+- [Alfred](https://www.alfredapp.com/)
+- [KeyCastr](https://github.com/keycastr/keycastr)
+- [IRightMouse](https://www.irightmouse.com/)
+- [SwitchHosts](https://switchhosts.vercel.app/zh)
+- [Apifox](https://apifox.com/)
+- [Notion](https://www.notion.com/)
+- [Charles](https://www.charlesproxy.com/)
 
 ## Chrome Extension
 
