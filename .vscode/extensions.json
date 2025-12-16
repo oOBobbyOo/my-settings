@@ -7,13 +7,13 @@
    "antfu.unocss",
    "antfu.vite",
    "antfu.where-am-i",
- 
+
    // themes & icons
    "antfu.icons-carbon",
    "antfu.theme-vitesse",
    "sainnhe.gruvbox-material",
    "catppuccin.catppuccin-vsc-icons",
- 
+
    // tools
    "alefragnani.project-manager",
    "dbaeumer.vscode-eslint",
@@ -36,21 +36,21 @@
    // markdown
    "davidanson.vscode-markdownlint",
    "yzhang.markdown-all-in-one",
- 
+
    // git
    "eamodio.gitlens",
 
    // ai
   "github.copilot",
   "github.copilot-chat",
- 
+
    // github
    "github.vscode-github-actions",
    "github.vscode-pull-request-github",
- 
+
    // react
    "dsznajder.es7-react-js-snippets",
- 
+
    // vue
    "vue.volar"
   ]

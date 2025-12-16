@@ -19,7 +19,7 @@
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
 
-  // ========== Editor ========== 
+  // ========== Editor ==========
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.wordWrap": "on",
@@ -83,7 +83,7 @@
     "**/LICENSE*": true,
   },
 
-  // ==========  Global Level Config, needs to put in User Settings ========== 
+  // ==========  Global Level Config, needs to put in User Settings ==========
   "window.zoomLevel": 1,
   "window.dialogStyle": "custom",
   "window.nativeTabs": true, // this is great, macOS only
@@ -91,7 +91,7 @@
   "window.titleBarStyle": "custom",
   "extensions.autoUpdate": "onlyEnabledExtensions",
 
-  // ========== Extension configs ========== 
+  // ========== Extension configs ==========
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
   "errorLens.enabledDiagnosticLevels": [
