@@ -15,6 +15,7 @@
   "workbench.preferredLightColorTheme": "Vitesse Light",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
