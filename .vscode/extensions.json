@@ -20,6 +20,7 @@
    "editorconfig.editorconfig",
    "esbenp.prettier-vscode",
    "christian-kohler.path-intellisense",
+   "intellsmi.comment-translate",
    "johnsoncodehk.vscode-tsconfig-helper",
    "lokalise.i18n-ally",
    "mpontus.tab-cycle",

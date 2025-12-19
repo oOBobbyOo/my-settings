@@ -55,6 +55,7 @@ ls ~/.oh-my-zsh/themes/
 - [Apifox](https://apifox.com/)
 - [Notion](https://www.notion.com/)
 - [Charles](https://www.charlesproxy.com/)
+- [Tikey](https://www.yingdev.com/projects/tickeys)
 
 ## Chrome Extension
 
