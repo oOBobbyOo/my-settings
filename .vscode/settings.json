@@ -19,6 +19,7 @@
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
+  "workbench.tree.renderIndentGuides": "always",
 
   // ========== Editor ==========
   "debug.onTaskErrors": "debugAnyway",
