@@ -47,15 +47,29 @@ ls ~/.oh-my-zsh/themes/
 ## Mac
 
 - [Homebrew](https://brew.sh/)
+- [VisCode](https://code.visualstudio.com/)
+- [Cursor](https://cursor.sh/)
 - [iTerm2](https://iterm2.com/)
 - [Alfred](https://www.alfredapp.com/)
+- [Raycast](https://www.raycast.com/)
 - [KeyCastr](https://github.com/keycastr/keycastr)
 - [IRightMouse](https://www.irightmouse.com/)
+- [Mos](https://github.com/Caldis/Mos)
 - [SwitchHosts](https://switchhosts.vercel.app/zh)
 - [Apifox](https://apifox.com/)
 - [Notion](https://www.notion.com/)
 - [Charles](https://www.charlesproxy.com/)
+- [Proxyman](https://proxyman.io/)
 - [Tikey](https://www.yingdev.com/projects/tickeys)
+- [Mole](https://github.com/tw93/Mole)
+- [Fliqlo](https://fliqlo.com/)
+- [Bob](https://github.com/ripperhe/Bob)
+- [Bartender](https://www.macbartender.com/)
+- [Rectangle](https://rectangleapp.com/)
+- [Fork](https://git-fork.com/)
+- [SourceTree](https://www.sourcetreeapp.com/)
+- [Tower](https://www.git-tower.com/)
+- [Paste](https://pasteapp.io/)
 
 ## Chrome Extension
 

@@ -26,7 +26,9 @@ ZSH_THEME="spaceship"
 plugins=(
   git
   zsh-autosuggestions
+  zsh-completions
   zsh-syntax-highlighting
+  fast-syntax-highlighting
   autojump
   extract
   zsh-z
