@@ -46,8 +46,10 @@
    "eamodio.gitlens",
 
    // ai
+  "anthropic.claude-code",
   "github.copilot",
   "github.copilot-chat",
+  "sst-dev.opencode",
 
    // github
    "github.vscode-github-actions",
